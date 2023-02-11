@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | QR code component</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            outfit: ['Outfit', 'sans-serif'],
+                        },
+                        colors: {
+                            White: 'hsl(0, 0%, 100%)',
+                            LightGray: 'hsl(212, 45%, 89%)',
+                            GrayishBlue: 'hsl(220, 15%, 55%)',
+                            DarkBlue: 'hsl(218, 44%, 22%)',
+                        },
+                        fontSize: {
+                            sm: '15px',
+                        },
+                        width: {
+                            sm: '320px',
+                        },
+                    },
+                },
+            }
+        </script>
+    </head>
+    <body class="bg-LightGray font-outfit">
+        <div class="h-screen grid place-content-center content-center">
+            <div class="w-sm text-center m-auto bg-White rounded-3xl">
+                <div class="p-5 pb-2">
+                    <img
+                        src="images/image-qr-code.png"
+                        alt="QR code"
+                        class="shadow rounded-xl max-w-full h-auto align-middle border-none"
+                    />
+                </div>
+                <p class="font-bold text-xl p-7 py-3">
+                    Improve your front-end skills by building projects
+                </p>
+                <p class="text-GrayishBlue px-8 text-sm pb-10">
+                    Scan the QR code to visit Frontend Mentor and take your
+                    coding skills to the next level
+                </p>
+            </div>
+        </div>
+
+        <!-- <div class="">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Your Name Here</a>.
+        </div> -->
+    </body>
+</html>
